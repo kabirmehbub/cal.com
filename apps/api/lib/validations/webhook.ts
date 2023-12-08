@@ -39,8 +39,8 @@ export const schemaWebhookEditBodyParams = schemaWebhookBaseBodyParams
   .strict();
 
 export const schemaWebhookReadPublic = Webhook.pick({
-  id: true,
-  userId: true,
+  id: false,
+  userId: false,
   eventTypeId: true,
   payloadTemplate: true,
   eventTriggers: true,
